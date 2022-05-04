@@ -1,0 +1,121 @@
+.container {
+  flex: 4;
+  padding: 20px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addButton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.productTop {
+  display: flex;
+}
+
+.topLeft,
+.topRight {
+  flex: 1;
+}
+
+.topRight,
+.productBottom {
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.infoTop {
+  display: flex;
+  align-items: center;
+}
+
+.productName {
+  font-weight: 600;
+}
+
+.infoBottom {
+  margin-top: 10px;
+}
+
+.infoItem {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoValue {
+  font-weight: 300;
+}
+
+.productImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.productForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLeft > label {
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.formLeft > input,
+select {
+  margin-bottom: 10px;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.uploadImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.formRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.productUpload {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}

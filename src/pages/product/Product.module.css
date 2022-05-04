@@ -1,0 +1,30 @@
+.container {
+  flex: 4;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+}
+
+.productImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.buttonEdit {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #3bb077;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.buttonDelete {
+  color: red;
+  cursor: pointer;
+}

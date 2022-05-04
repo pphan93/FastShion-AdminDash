@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+  margin-top: 10px;
+}
+.mainContainer {
+  flex: 4;
+}
