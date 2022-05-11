@@ -19,8 +19,6 @@ const WidgetLarge = () => {
     getOrders();
   }, []);
 
-  console.log(orders);
-
   const Button = ({ type }) => {
     return (
       <button className={`${styles.button} ${styles[type]}`}>{type}</button>
