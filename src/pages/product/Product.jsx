@@ -6,49 +6,6 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteProducts, getProducts } from "../../lib/api";
 
-const rows = [
-  {
-    id: 1,
-    name: "Apple Airpods",
-    img: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000",
-    stock: 32,
-    status: "active",
-    price: "$120.00",
-  },
-  {
-    id: 2,
-    name: "Apple Airpods",
-    img: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000",
-    stock: 32,
-    status: "active",
-    price: "$120.00",
-  },
-  {
-    id: 3,
-    name: "Apple Airpods",
-    img: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000",
-    stock: 32,
-    status: "active",
-    price: "$120.00",
-  },
-  {
-    id: 4,
-    name: "Apple Airpods",
-    img: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000",
-    stock: 32,
-    status: "active",
-    price: "$120.00",
-  },
-  {
-    id: 5,
-    name: "Apple Airpods",
-    img: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000",
-    stock: 32,
-    status: "active",
-    price: "$120.00",
-  },
-];
-
 const Product = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.product.products);
@@ -128,7 +85,7 @@ const Product = () => {
   ];
   return (
     <div className={styles.container}>
-      <div style={{ height: 400, width: "100%" }}>
+      <div style={{ height: 400, width: "96%", margin: "0px 20px" }}>
         <DataGrid
           rows={products}
           columns={columns}

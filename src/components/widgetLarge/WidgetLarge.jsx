@@ -42,11 +42,12 @@ const WidgetLarge = () => {
           return (
             <tr key={order._id} className={styles.tableRow}>
               <td className={styles.user}>
-                <img
+                {/* <img
                   src="https://i.pravatar.cc/"
                   alt=""
                   className={styles.img}
-                ></img>
+                ></img> */}
+                {order.name}
                 <span className={styles.name}>{order.userId}</span>
               </td>
               <td className={styles.date}>{format(order.createdAt)}</td>

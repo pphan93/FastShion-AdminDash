@@ -11,8 +11,16 @@ const FeaturedInfo = () => {
     const getRevenue = async () => {
       try {
         const data = await getStoreRevenue();
-        setRevenue(data);
-        setPercentage((data[1].total * 100) / data[0].total);
+        console.log(data);
+        if (data.length === 2) {
+          setRevenue(data[1].total);
+          setPercentage(
+            ((data[1].total - data[0].total) / data[0].total) * 100
+          );
+        } else {
+          setRevenue(data[0].total);
+          setPercentage(((data[0].total - 1) / 1) * 100);
+        }
       } catch (error) {
         console.log(error);
       }
@@ -26,7 +34,7 @@ const FeaturedInfo = () => {
       <div className={styles.item}>
         <span className={styles.title}>Revenue</span>
         <div className={styles.moneyContainer}>
-          <span className={styles.money}>${!revenue ? revenue : 0}</span>
+          <span className={styles.money}>${revenue ? revenue : 0}</span>
           <span className={styles.rate}>
             %{Math.floor(percentage)}
             {percentage < 0 ? (
