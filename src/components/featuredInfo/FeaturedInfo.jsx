@@ -13,12 +13,12 @@ const FeaturedInfo = () => {
         const data = await getStoreRevenue();
         console.log(data);
         if (data.length === 2) {
-          setRevenue(data[1].total);
+          setRevenue(data[1].total.toFixed(2));
           setPercentage(
             ((data[1].total - data[0].total) / data[0].total) * 100
           );
         } else {
-          setRevenue(data[0].total);
+          setRevenue(data[0].total.toFixed(2));
           setPercentage(((data[0].total - 1) / 1) * 100);
         }
       } catch (error) {

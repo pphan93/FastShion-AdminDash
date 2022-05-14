@@ -125,7 +125,7 @@ const User = () => {
 
   return (
     <div className={styles.container}>
-      <div style={{ height: 400, width: "100%", margin: "0px 20px" }}>
+      <div style={{ height: 400, width: "96%", margin: "0px 20px" }}>
         <DataGrid
           rows={data}
           columns={columns}
